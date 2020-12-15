@@ -1,0 +1,26 @@
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+
+button {
+  width: 200px;
+}
+
+.blink {
+  animation: blinker .75s linear infinite;
+}
+
+.flex-center {
+	display: flex;
+	justify-content: center;
+	align-items: flex-start;
+}
+
+.flex-row {
+	display: flex;
+	flex-direction: row;
+}
+
+@keyframes blinker {
+  50% {
+    opacity: 0;
+  }
+}

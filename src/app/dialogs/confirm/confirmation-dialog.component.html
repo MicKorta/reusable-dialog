@@ -1,0 +1,22 @@
+<!--
+/**
+ * View for the confirmation dialog.
+ *
+ * @author  micha@codaa.de
+ * @web     https://www.codaa.de
+ * @version 1.0
+ * @since   2020-12-15
+ */
+-->
+
+<div style="z-index: 0">
+  <div style="min-width: 300px; min-height: 100px;">{{header}}</div>
+
+  <div class="flex-row flex-center">
+    <div style="margin-right: 20px">
+      <button mat-raised-button (click)="decision(true)" class="btn m-2" style="width: 100px">YES</button>
+    </div><div>
+      <button mat-raised-button (click)="decision(false)" class="btn m-2" style="width: 100px">NO</button><br />
+    </div>
+  </div>
+</div>

@@ -1,0 +1,23 @@
+<!--
+/**
+ * View for the open dialog.
+ *
+ * @author  micha@codaa.de
+ * @web     https://www.codaa.de
+ * @version 1.0
+ * @since   2020-12-15
+ */
+-->
+
+<div>
+  <div style="min-width: 300px; min-height: 100px;">{{header}}</div>
+  <div class="flex-row flex-center">
+    <div style="margin-right: 20px">
+      <button mat-raised-button (click)="decision(Decision.OPEN)" class="btn m-2" style="width: 100px">Open</button>
+    </div><div style="margin-right: 20px">
+      <button mat-raised-button (click)="decision(Decision.CLOSE)" class="btn m-2" style="width: 100px">Close</button><br />
+    </div><div>
+      <button mat-raised-button (click)="decision(Decision.CANCEL)" class="btn m-2" style="width: 100px">Cancel</button><br />
+    </div>
+  </div>
+</div>
